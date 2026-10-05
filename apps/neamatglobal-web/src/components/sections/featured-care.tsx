@@ -6,7 +6,7 @@ import { Reveal, Stagger, StaggerItem } from "@neamat/ui/components/brand/reveal
 import { SectionEyebrow } from "@neamat/ui/components/brand/section-eyebrow";
 import { Card, CardContent, CardHeader, CardTitle } from "@neamat/ui/components/ui/card";
 import { cn } from "@neamat/ui/lib/utils";
-import { careComingSoon, careHref, sections } from "@/config/site";
+import { careHref, sections } from "@/config/site";
 
 const services = [
   {
@@ -52,7 +52,7 @@ export async function FeaturedCare() {
             <div className="relative p-7 sm:p-10 lg:p-14">
               <div
                 aria-hidden="true"
-                className="bg-unit-neamatcare/10 absolute -start-24 -top-24 size-64 rounded-full blur-3xl"
+                className="bg-unit-neamatcare/10 glow absolute -start-24 -top-24 size-64 rounded-full"
               />
               <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
 
@@ -114,7 +114,6 @@ export async function FeaturedCare() {
 
               <GoldPillButton
                 href={careHref(locale)}
-                external={!careComingSoon}
                 variant="navy"
                 size="lg"
                 className="shadow-glow-navy mt-10"

@@ -169,22 +169,22 @@
       "neopure": {
         "category": "Water Technology",
         "description": "Clean water. Healthier lives. Advanced water purification solutions for homes and industries.",
-        "imageAlt": "Clean water being poured into a glass"
+        "imageAlt": "A woman pouring fresh drinking water into a glass at home"
       },
       "propertyos": {
         "category": "Property Management SaaS",
         "description": "Smarter property. Better living. Digital solutions for efficient property and facility management.",
-        "imageAlt": "Modern residential apartment building"
+        "imageAlt": "Colourful modern apartment towers in a residential district"
       },
       "booleanforce": {
         "category": "IT & Digital Technology",
         "description": "Ideas. Design. Digital growth. Technology solutions for a smarter, connected future.",
-        "imageAlt": "Laptop on a wooden work desk"
+        "imageAlt": "A software engineer writing code across two monitors"
       },
       "neamatcare": {
         "category": "Home, Facility & Maintenance Services",
         "description": "Reliable care. Every day. Complete home, water, property and facility services.",
-        "imageAlt": "NEAMAT CARE technician in uniform inspecting an electrical panel"
+        "imageAlt": "A NEAMAT CARE technician servicing an outdoor air-conditioning unit"
       }
     },
     "titleHighlight": "One Vision."
@@ -266,7 +266,7 @@
       "bangladesh": {
         "name": "Bangladesh",
         "role": "Operations",
-        "imageAlt": "Residential buildings in Dhaka, Bangladesh"
+        "imageAlt": "Aerial view of Dhaka's dense city skyline"
       },
       "future": {
         "name": "Future Markets"
@@ -286,19 +286,51 @@
     "items": {
       "neopure": {
         "title": "NEAPURE Launches Next-Gen Water Purifier Series",
-        "imageAlt": "Modern kitchen with a built-in water tap"
+        "imageAlt": "Fresh water being poured into a clear glass",
+        "summary": "A new range of under-sink and countertop purifiers brings multi-stage filtration, smart filter alerts and lower running costs to homes across Saudi Arabia and Bangladesh.",
+        "body": {
+          "p1": "NeaPure has introduced its next-generation purifier series, designed for the water conditions of the region. Each unit combines sediment, carbon and reverse-osmosis stages with a mineral balance cartridge, so families get water that is clean, safe and pleasant to drink.",
+          "p2": "The new series connects to the NEAMAT CARE platform. Filter life is tracked automatically, customers receive a reminder before a change is due, and a verified technician can be booked in a few taps — turning water care into a simple, scheduled routine.",
+          "p3": "The series is rolling out first in Riyadh and Dhaka through NeaPure's dealer network, with installation, testing and a service warranty included on every purchase."
+        },
+        "quote": "Clean water should never be an afterthought. This series makes it effortless to keep every glass safe.",
+        "quoteBy": "NeaPure product team"
       },
       "booleanforce": {
         "title": "BooleanForce Wins Digital Innovation Award",
-        "imageAlt": "A gold trophy held in hand"
+        "imageAlt": "A gold trophy held up in celebration",
+        "summary": "BooleanForce has been recognised for its work on digital platforms that connect customers, field teams and operations across the NEAMAT GLOBAL group.",
+        "body": {
+          "p1": "BooleanForce, the group's IT and digital technology company, has received a digital innovation award for the platforms it builds for businesses in Saudi Arabia and Bangladesh.",
+          "p2": "The award highlights BooleanForce's approach: product thinking, strong engineering and design that is tested with real users. Its team builds the technology behind NEAMAT CARE and PropertyOS, alongside projects for external clients.",
+          "p3": "The recognition reflects the group's investment in technology talent in Dhaka and its ambition to export digital solutions across the region."
+        },
+        "quote": "We build technology that people actually use every day. This award belongs to our whole team.",
+        "quoteBy": "BooleanForce leadership"
       },
       "neamatcare": {
         "title": "NEAMAT CARE Opens New Service Center in Riyadh",
-        "imageAlt": "Modern glass-fronted service center building"
+        "imageAlt": "A technician repairing an air-conditioning unit in a service workshop",
+        "summary": "A new service center in Riyadh brings faster response times, a parts store and a training workshop for NEAMAT CARE technicians.",
+        "body": {
+          "p1": "NEAMAT CARE has opened a new service center in Riyadh to support its growing base of home, property and facility customers in the city.",
+          "p2": "The center houses a dispatch team, a spare-parts store and a hands-on training workshop where technicians are certified on air-conditioning, electrical, plumbing and water-purifier work before they visit customers.",
+          "p3": "With technicians based closer to the neighbourhoods they serve, customers can expect shorter wait times and more same-day appointments — all booked and tracked through the NEAMAT CARE platform."
+        },
+        "quote": "Every visit should feel reliable. A strong service center is how we make that promise real.",
+        "quoteBy": "NEAMAT CARE operations"
       },
       "propertyos": {
         "title": "PropertyOS and Leading Partners Sign Strategic Deal",
-        "imageAlt": "Two business partners shaking hands"
+        "imageAlt": "Two business partners shaking hands",
+        "summary": "PropertyOS has signed a strategic agreement to bring digital property and facility management to a portfolio of residential and commercial buildings.",
+        "body": {
+          "p1": "PropertyOS, the group's property-management software company, has signed a strategic partnership to digitise the operations of a portfolio of residential and commercial buildings.",
+          "p2": "Owners and managers will use PropertyOS to handle leases, rent collection, maintenance requests and tenant communication in one place, with maintenance jobs routed directly to NEAMAT CARE technicians.",
+          "p3": "The partnership is a milestone for PropertyOS as it scales beyond its first customers and builds a connected ecosystem with the other NEAMAT GLOBAL companies."
+        },
+        "quote": "Great buildings deserve great operations. Together we are making property management simpler for everyone.",
+        "quoteBy": "PropertyOS partnerships team"
       }
     },
     "titleHighlight": "Informed"
@@ -347,21 +379,894 @@
     "send": "Send message",
     "offline": "Live chat is launching soon. Please use Contact for now."
   },
-  "Placeholder": {
-    "businesses": "Our Businesses",
-    "global-presence": "Global Presence",
-    "news": "News",
-    "neamat-care": "NEAMAT CARE",
-    "careers": "Careers",
-    "contact": "Contact",
-    "help": "Help Center",
-    "support": "Customer Support",
-    "privacy": "Privacy Policy",
-    "terms": "Terms & Conditions",
-    "description": "This page is being prepared and will be available soon."
-  },
   "NotFound": {
     "title": "Page not found",
     "description": "The page you are looking for doesn't exist or has moved."
+  },
+  "QuickLinks": {
+    "eyebrow": "Still looking?",
+    "title": "We're here to help",
+    "contact": {
+      "title": "Contact us",
+      "text": "Send an enquiry to our team in Riyadh or Dhaka."
+    },
+    "support": {
+      "title": "Customer support",
+      "text": "Get help with a product, service or booking."
+    },
+    "help": {
+      "title": "Help Center",
+      "text": "Find quick answers to the most common questions."
+    },
+    "careers": {
+      "title": "Careers",
+      "text": "Explore open roles across our four companies."
+    }
+  },
+  "BusinessesPage": {
+    "metaTitle": "Our Businesses",
+    "metaDescription": "Meet the four NEAMAT GLOBAL companies — NeaPure, PropertyOS, BooleanForce and NEAMAT CARE — and how they work together.",
+    "breadcrumb": "Our Businesses",
+    "eyebrow": "Our Companies",
+    "title": "Four Companies.",
+    "titleHighlight": "One Shared Vision.",
+    "subtitle": "From clean water to smart buildings, digital products and everyday home care — each company leads in its field, and all four grow stronger together.",
+    "imageAlt": "A team collaborating around a table in a bright office",
+    "jumpLabel": "Jump to a company",
+    "units": {
+      "neopure": {
+        "headline": "Clean water. Healthier lives.",
+        "text": "NeaPure designs and installs water purification for homes, offices and industry — from compact countertop purifiers to full treatment systems — backed by testing, maintenance and genuine filters.",
+        "features": {
+          "f1": "Home & office purifiers",
+          "f2": "Industrial water treatment",
+          "f3": "Water quality testing",
+          "f4": "Filter plans & maintenance"
+        },
+        "stat": {
+          "value": "5-stage",
+          "label": "Advanced filtration"
+        },
+        "cta": "Talk to NeaPure"
+      },
+      "propertyos": {
+        "headline": "Smarter property. Better living.",
+        "text": "PropertyOS is a property and facility management platform for owners, managers and tenants. Leases, rent, maintenance and communication live in one place, with real-time reporting for every building.",
+        "features": {
+          "f1": "Lease & rent management",
+          "f2": "Maintenance requests",
+          "f3": "Tenant & owner portals",
+          "f4": "Portfolio reporting"
+        },
+        "stat": {
+          "value": "All-in-one",
+          "label": "Property platform"
+        },
+        "cta": "Talk to PropertyOS"
+      },
+      "booleanforce": {
+        "headline": "Ideas. Design. Digital growth.",
+        "text": "BooleanForce is the group's technology company. Its engineers and designers build web and mobile products, cloud platforms and automation for the group's companies and for clients across the region.",
+        "features": {
+          "f1": "Web & mobile products",
+          "f2": "UX & product design",
+          "f3": "Cloud & integrations",
+          "f4": "Automation & data"
+        },
+        "stat": {
+          "value": "End-to-end",
+          "label": "Product delivery"
+        },
+        "cta": "Talk to BooleanForce"
+      },
+      "neamatcare": {
+        "headline": "Reliable care. Every day.",
+        "text": "NEAMAT CARE brings home, water, property and facility services together on one platform — verified technicians, simple online booking, a digital service history and a warranty on every job.",
+        "features": {
+          "f1": "AC, electrical & plumbing",
+          "f2": "Water purifier servicing",
+          "f3": "Property & facility care",
+          "f4": "Online booking & tracking"
+        },
+        "stat": {
+          "value": "1 platform",
+          "label": "For every home service"
+        },
+        "cta": "Explore NEAMAT CARE"
+      }
+    },
+    "synergy": {
+      "eyebrow": "Better Together",
+      "title": "One group.",
+      "titleHighlight": "Shared strengths.",
+      "description": "Our companies are built to work together, so every customer benefits from the whole group.",
+      "items": {
+        "technology": {
+          "title": "Shared technology",
+          "text": "BooleanForce builds the platforms behind NEAMAT CARE and PropertyOS, so our products improve together."
+        },
+        "network": {
+          "title": "One service network",
+          "text": "NEAMAT CARE technicians install and service NeaPure systems and handle maintenance for PropertyOS buildings."
+        },
+        "standards": {
+          "title": "Common standards",
+          "text": "Group-wide quality, safety and governance standards give customers the same confidence everywhere."
+        },
+        "growth": {
+          "title": "Long-term growth",
+          "text": "Shared leadership and investment let each company grow faster and expand into new markets."
+        }
+      }
+    }
+  },
+  "PresencePage": {
+    "metaTitle": "Global Presence",
+    "metaDescription": "NEAMAT GLOBAL is headquartered in Riyadh, Saudi Arabia, with operations in Dhaka, Bangladesh — and plans for further growth across the region.",
+    "breadcrumb": "Global Presence",
+    "eyebrow": "Global Presence",
+    "title": "Rooted in Riyadh.",
+    "titleHighlight": "Growing across borders.",
+    "subtitle": "Our head office in Saudi Arabia and our operations hub in Bangladesh work as one team — serving customers, building technology and preparing for the markets ahead.",
+    "imageAlt": "Riyadh skyline at sunset with the Kingdom Centre tower",
+    "stats": {
+      "hq": {
+        "value": "Riyadh",
+        "label": "Head office"
+      },
+      "ops": {
+        "value": "Dhaka",
+        "label": "Operations hub"
+      },
+      "units": "Business units",
+      "team": "Team members"
+    },
+    "markets": {
+      "eyebrow": "Where We Operate",
+      "title": "Two countries.",
+      "titleHighlight": "One team.",
+      "description": "Each location plays a distinct role, and together they cover strategy, service delivery and technology.",
+      "unitsLabel": "Companies active here",
+      "saudi": {
+        "city": "Riyadh",
+        "text": "Our head office sets the group's strategy and leads our largest customer market. Saudi Arabia's rapid growth and focus on quality of life make it the natural home for our water, property and home-care services.",
+        "highlights": {
+          "h1": "Group leadership, strategy and partnerships",
+          "h2": "Launch market for NEAMAT CARE and NeaPure",
+          "h3": "Growth aligned with the Kingdom's long-term vision"
+        }
+      },
+      "bangladesh": {
+        "city": "Dhaka",
+        "text": "Our operations hub in Dhaka is home to engineering, product and service teams. It powers the group's technology and serves a fast-growing market of homes and businesses.",
+        "highlights": {
+          "h1": "BooleanForce engineering and design teams",
+          "h2": "Service operations and customer support",
+          "h3": "PropertyOS and NEAMAT CARE platform development"
+        }
+      }
+    },
+    "future": {
+      "eyebrow": "What's Next",
+      "title": "Building toward",
+      "titleHighlight": "new markets.",
+      "description": "We grow carefully — entering new markets where our companies can create real, lasting value.",
+      "status": {
+        "next": "Next",
+        "exploring": "Exploring",
+        "longTerm": "Long term"
+      },
+      "regions": {
+        "gcc": {
+          "title": "Gulf Cooperation Council",
+          "text": "Extending water, property and home-care services to neighbouring Gulf markets with similar customer needs.",
+          "countries": "UAE · Qatar · Kuwait · Bahrain · Oman"
+        },
+        "southAsia": {
+          "title": "South Asia",
+          "text": "Building on our Dhaka hub to serve new cities and partners with technology and service operations.",
+          "countries": "Regional expansion from Bangladesh"
+        },
+        "mena": {
+          "title": "Middle East & North Africa",
+          "text": "Exploring partnerships that bring our platforms and expertise to a wider regional audience.",
+          "countries": "Partnership-led growth"
+        }
+      }
+    }
+  },
+  "NewsPage": {
+    "metaTitle": "News & Insights",
+    "metaDescription": "The latest news from NEAMAT GLOBAL and its companies — product launches, partnerships, awards and milestones.",
+    "breadcrumb": "News",
+    "eyebrow": "Newsroom",
+    "title": "News &",
+    "titleHighlight": "Insights.",
+    "subtitle": "Product launches, partnerships, awards and milestones from across the NEAMAT GLOBAL group.",
+    "imageAlt": "An engineer installing solar panels under a bright blue sky",
+    "latest": "Latest story",
+    "readStory": "Read the story",
+    "all": {
+      "eyebrow": "All Stories",
+      "title": "From across the group",
+      "filterLabel": "Filter stories by company",
+      "filterAll": "All news",
+      "empty": "No stories in this category yet.",
+      "results": "{count} stories shown"
+    },
+    "newsletter": {
+      "eyebrow": "Stay Updated",
+      "title": "Get our news in your inbox.",
+      "description": "Subscribe for launches, partnerships and stories from our four companies — no spam, unsubscribe any time."
+    },
+    "article": {
+      "readTime": "3 min read",
+      "back": "Back to all news",
+      "about": "About the company",
+      "relatedEyebrow": "Keep Reading",
+      "related": "More news"
+    }
+  },
+  "CarePage": {
+    "metaTitle": "NEAMAT CARE",
+    "metaDescription": "NEAMAT CARE brings home, water, property and facility services together on one platform — verified technicians, online booking and a service warranty.",
+    "eyebrow": "Home, Facility & Maintenance Services",
+    "subtitle": "One trusted platform for every home and property service — from water purifiers and air conditioning to cleaning and full facility care.",
+    "ctaPrimary": "Visit neamatcare.com",
+    "ctaSecondary": "Talk to our team",
+    "stats": {
+      "services": "Service lines",
+      "roles": "Platform roles",
+      "languages": "Languages",
+      "countries": "Countries"
+    },
+    "services": {
+      "eyebrow": "Our Services",
+      "title": "Everything your home needs.",
+      "titleHighlight": "One team.",
+      "description": "Book a single repair or a full maintenance plan — every job is handled by trained, verified professionals.",
+      "items": {
+        "water": {
+          "title": "WaterCare",
+          "text": "Purifier installation, filter changes and water-quality testing for safe, great-tasting water.",
+          "tags": {
+            "t1": "Purifiers",
+            "t2": "Filter plans",
+            "t3": "Water testing"
+          }
+        },
+        "ac": {
+          "title": "AC & Appliances",
+          "text": "Air-conditioning service, gas top-ups, deep cleaning and appliance repairs before the heat arrives.",
+          "tags": {
+            "t1": "AC servicing",
+            "t2": "Repairs",
+            "t3": "Installation"
+          }
+        },
+        "electrical": {
+          "title": "Electrical",
+          "text": "Safe wiring, fittings, panels and fault-finding by certified electricians.",
+          "tags": {
+            "t1": "Wiring",
+            "t2": "Lighting",
+            "t3": "Panels"
+          }
+        },
+        "cleaning": {
+          "title": "HomeCare",
+          "text": "Plumbing, deep cleaning, pest control and the everyday fixes that keep a home running.",
+          "tags": {
+            "t1": "Plumbing",
+            "t2": "Deep cleaning",
+            "t3": "Pest control"
+          }
+        },
+        "property": {
+          "title": "PropertyCare",
+          "text": "Planned maintenance for landlords, villas, apartments and residential buildings.",
+          "tags": {
+            "t1": "Villas",
+            "t2": "Apartments",
+            "t3": "Landlords"
+          }
+        },
+        "facility": {
+          "title": "FacilityCare",
+          "text": "Service contracts for offices, retail and public facilities with clear reporting.",
+          "tags": {
+            "t1": "Offices",
+            "t2": "Retail",
+            "t3": "Contracts"
+          }
+        }
+      }
+    },
+    "how": {
+      "eyebrow": "How It Works",
+      "title": "Booked in minutes. Done right.",
+      "description": "A simple, transparent process from the first tap to the follow-up.",
+      "steps": {
+        "book": {
+          "title": "Book online",
+          "text": "Choose a service and a time that suits you — on the web or by phone."
+        },
+        "match": {
+          "title": "Get matched",
+          "text": "We assign a verified technician near you and share their details."
+        },
+        "visit": {
+          "title": "Service at home",
+          "text": "Your technician arrives on time, explains the work and gets it done."
+        },
+        "after": {
+          "title": "Warranty & history",
+          "text": "Every job is covered by our warranty and saved to your digital history."
+        }
+      }
+    },
+    "platform": {
+      "eyebrow": "The NEAMAT CARE Platform",
+      "title": "One platform.",
+      "titleHighlight": "Three roles.",
+      "description": "Behind every visit is a platform that connects our administrators, dealers and technicians — so jobs are assigned quickly, tracked live and closed properly.",
+      "imageAlt": "A technician checking an air-conditioning unit with pressure gauges",
+      "roles": {
+        "admin": {
+          "title": "Super Admin",
+          "text": "Manages dealers, technicians, the service catalog, jobs, payouts and reporting."
+        },
+        "dealer": {
+          "title": "Dealers",
+          "text": "Run their local team, inventory and jobs, and track earnings and performance."
+        },
+        "technician": {
+          "title": "Technicians",
+          "text": "Receive jobs on their phone, navigate to customers and close each job with photos and notes."
+        }
+      },
+      "job": {
+        "title": "AC servicing",
+        "status": "On the way",
+        "eta": "Technician arriving in 25 min",
+        "verified": "Verified technician"
+      }
+    },
+    "cta": {
+      "title": "Your home deserves",
+      "titleHighlight": "reliable care.",
+      "description": "Book your first service on neamatcare.com, or get in touch with our support team for help choosing the right plan.",
+      "primary": "Book on neamatcare.com",
+      "secondary": "Customer support",
+      "imageAlt": "An electrician inspecting a building's electrical panel"
+    }
+  },
+  "CareersPage": {
+    "metaTitle": "Careers",
+    "metaDescription": "Build your career at NEAMAT GLOBAL. Explore open roles in water technology, property software, digital technology and home services in Riyadh and Dhaka.",
+    "breadcrumb": "Careers",
+    "eyebrow": "Careers",
+    "title": "Build what's next",
+    "titleHighlight": "with us.",
+    "subtitle": "Join a growing group of companies where your work improves everyday life — for families, buildings and businesses across two countries.",
+    "imageAlt": "A diverse team working together around a table with laptops",
+    "ctaRoles": "View open roles",
+    "stats": {
+      "roles": "Open roles",
+      "units": "Companies to grow in",
+      "countries": "Countries",
+      "team": "Colleagues"
+    },
+    "benefits": {
+      "eyebrow": "Why Join Us",
+      "title": "A place to",
+      "titleHighlight": "do your best work.",
+      "description": "We look after our people, invest in their growth and give them real responsibility early.",
+      "items": {
+        "growth": {
+          "title": "Career growth",
+          "text": "Clear paths to progress, with the chance to move between companies in the group."
+        },
+        "impact": {
+          "title": "Real impact",
+          "text": "Your work reaches homes and businesses every day — and you can see the difference."
+        },
+        "global": {
+          "title": "Cross-border teams",
+          "text": "Collaborate with colleagues in Riyadh and Dhaka on projects that span the region."
+        },
+        "learning": {
+          "title": "Learning & training",
+          "text": "Certifications, mentoring and a training budget for every team member."
+        },
+        "wellbeing": {
+          "title": "Health & wellbeing",
+          "text": "Medical cover, paid leave and a supportive, respectful workplace."
+        },
+        "recognition": {
+          "title": "Recognition",
+          "text": "Performance rewards and celebrations of the people who go the extra mile."
+        }
+      }
+    },
+    "culture": {
+      "eyebrow": "Life at NEAMAT GLOBAL",
+      "title": "People first.",
+      "titleHighlight": "Always.",
+      "imageAlt": "A team discussing ideas at a meeting table",
+      "imageAlt2": "Colleagues collaborating in a modern office",
+      "badge": {
+        "value": "1000+",
+        "label": "Colleagues across two countries"
+      },
+      "quote": "Here, ideas move quickly from the whiteboard to the real world. You get trusted with responsibility — and supported to succeed.",
+      "quoteBy": "A NEAMAT GLOBAL team member",
+      "pillars": {
+        "ownership": {
+          "title": "Ownership",
+          "text": "We take responsibility and follow through."
+        },
+        "curiosity": {
+          "title": "Curiosity",
+          "text": "We keep learning and improving."
+        },
+        "care": {
+          "title": "Care",
+          "text": "We look after customers and each other."
+        }
+      }
+    },
+    "roles": {
+      "eyebrow": "Open Roles",
+      "title": "Find your",
+      "titleHighlight": "next role.",
+      "description": "We're hiring across our companies. Choose a role and send us your CV — we read every application.",
+      "filterLabel": "Filter roles by location",
+      "filterAll": "All locations",
+      "apply": "Apply now",
+      "empty": "No open roles in this location right now.",
+      "results": "{count} roles shown",
+      "locations": {
+        "riyadh": "Riyadh, Saudi Arabia",
+        "dhaka": "Dhaka, Bangladesh"
+      },
+      "types": {
+        "fullTime": "Full-time",
+        "contract": "Contract"
+      },
+      "items": {
+        "waterEngineer": {
+          "title": "Water Treatment Engineer",
+          "summary": "Design and commission purification systems for residential and commercial customers."
+        },
+        "serviceLead": {
+          "title": "Service Operations Lead",
+          "summary": "Run daily dispatch, quality and customer experience for our Riyadh service center."
+        },
+        "hvacTechnician": {
+          "title": "HVAC Technician",
+          "summary": "Install, service and repair air-conditioning systems in homes and facilities."
+        },
+        "productManager": {
+          "title": "Product Manager, PropertyOS",
+          "summary": "Shape the roadmap for our property-management platform with customers and engineers."
+        },
+        "fullstackEngineer": {
+          "title": "Full-Stack Engineer",
+          "summary": "Build web platforms and APIs with TypeScript, React and Python for group products."
+        },
+        "productDesigner": {
+          "title": "Product Designer",
+          "summary": "Design clear, accessible experiences for customers, dealers and technicians."
+        }
+      },
+      "open": {
+        "title": "Don't see the right role?",
+        "text": "Send us your CV and tell us how you'd like to contribute — we'll be in touch when a match opens.",
+        "cta": "Send your CV"
+      }
+    },
+    "process": {
+      "eyebrow": "How We Hire",
+      "title": "A clear, respectful process",
+      "description": "We keep you informed at every step and aim to share a decision within three weeks.",
+      "steps": {
+        "apply": {
+          "title": "Apply",
+          "text": "Send your CV and a short note about what you'd like to do."
+        },
+        "talk": {
+          "title": "First conversation",
+          "text": "A friendly call to learn about you and answer your questions."
+        },
+        "meet": {
+          "title": "Meet the team",
+          "text": "A practical interview with the people you'd work with."
+        },
+        "welcome": {
+          "title": "Offer & onboarding",
+          "text": "A clear offer and a structured first month to settle in."
+        }
+      }
+    }
+  },
+  "ContactPage": {
+    "metaTitle": "Contact Us",
+    "metaDescription": "Get in touch with NEAMAT GLOBAL — enquiries, partnerships, media and customer questions. Offices in Riyadh, Saudi Arabia and Dhaka, Bangladesh.",
+    "breadcrumb": "Contact",
+    "eyebrow": "Get in Touch",
+    "title": "Let's start a",
+    "titleHighlight": "conversation.",
+    "subtitle": "Whether you're a customer, a partner or a future colleague, our team will make sure your message reaches the right people.",
+    "imageAlt": "Two business partners shaking hands",
+    "direct": {
+      "eyebrow": "Direct Contact",
+      "title": "Talk to us directly",
+      "text": "Prefer email or phone? Reach our offices using the details below.",
+      "email": "Email us",
+      "hours": "Office hours",
+      "hoursValue": "Sunday – Thursday, 9:00 – 18:00"
+    },
+    "offices": {
+      "title": "Our offices",
+      "riyadh": {
+        "name": "Riyadh",
+        "role": "Head Office",
+        "address": "King Fahd Road, Riyadh, Kingdom of Saudi Arabia"
+      },
+      "dhaka": {
+        "name": "Dhaka",
+        "role": "Operations",
+        "address": "Gulshan Avenue, Dhaka, Bangladesh"
+      }
+    },
+    "form": {
+      "title": "Send us a message",
+      "description": "Fill in the form and we'll reply within two working days.",
+      "name": "Full name",
+      "email": "Email address",
+      "phone": "Phone",
+      "company": "Company",
+      "optional": "(optional)",
+      "topic": "How can we help?",
+      "topics": {
+        "general": "General enquiry",
+        "partnership": "Partnerships & business",
+        "care": "NEAMAT CARE services",
+        "careers": "Careers",
+        "media": "Media & press"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell us a little about your enquiry…",
+      "consent": "I agree that NEAMAT GLOBAL may use these details to respond to my enquiry, as described in the Privacy Policy.",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "error": "Your message couldn't be sent. Please try again or email us directly.",
+      "errors": {
+        "name": "Please enter your name.",
+        "email": "Please enter a valid email address.",
+        "phone": "Please enter a valid phone number.",
+        "topic": "Please choose a topic.",
+        "message": "Please write at least 20 characters.",
+        "consent": "Please confirm so we can reply to you."
+      },
+      "success": {
+        "title": "Thank you — message sent.",
+        "text": "Our team has received your enquiry and will get back to you within two working days.",
+        "again": "Send another message"
+      }
+    }
+  },
+  "HelpPage": {
+    "metaTitle": "Help Center",
+    "metaDescription": "Answers to common questions about NEAMAT GLOBAL, NEAMAT CARE services, bookings, payments and privacy.",
+    "breadcrumb": "Help Center",
+    "eyebrow": "Help Center",
+    "title": "How can we",
+    "titleHighlight": "help you?",
+    "subtitle": "Find quick answers about our companies, NEAMAT CARE services, bookings and your data.",
+    "imageAlt": "A smiling support agent wearing a headset",
+    "faq": {
+      "eyebrow": "Frequently Asked Questions",
+      "title": "Answers, by topic",
+      "description": "Choose a topic to see the questions we're asked most often.",
+      "categoriesLabel": "Question topics",
+      "categories": {
+        "general": "About NEAMAT GLOBAL",
+        "care": "NEAMAT CARE services",
+        "bookings": "Bookings & payments",
+        "privacy": "Account & privacy"
+      },
+      "items": {
+        "general": {
+          "q1": {
+            "q": "What is NEAMAT GLOBAL?",
+            "a": "NEAMAT GLOBAL is a diversified group of four companies — NeaPure (water technology), PropertyOS (property management software), BooleanForce (IT and digital technology) and NEAMAT CARE (home, facility and maintenance services)."
+          },
+          "q2": {
+            "q": "Where do you operate?",
+            "a": "Our head office is in Riyadh, Saudi Arabia, and our operations hub is in Dhaka, Bangladesh. We are planning further growth across the Gulf and the wider region."
+          },
+          "q3": {
+            "q": "How can my company partner with you?",
+            "a": "Use the Contact page and choose “Partnerships & business”. Our partnerships team will review your message and reply within two working days."
+          },
+          "q4": {
+            "q": "How do I contact the media team?",
+            "a": "Journalists can choose “Media & press” on the Contact form or email our media team directly."
+          }
+        },
+        "care": {
+          "q1": {
+            "q": "Which services does NEAMAT CARE offer?",
+            "a": "NEAMAT CARE covers water purifier care, air-conditioning and appliances, electrical work, plumbing, deep cleaning, pest control, and planned maintenance for properties and facilities."
+          },
+          "q2": {
+            "q": "Are your technicians verified?",
+            "a": "Yes. Every technician is identity-checked, trained and certified for the services they provide before they can accept jobs."
+          },
+          "q3": {
+            "q": "Is there a warranty on the work?",
+            "a": "Every completed job is covered by the NEAMAT CARE service warranty. If something isn't right, book a follow-up visit from your service history."
+          },
+          "q4": {
+            "q": "Do you serve businesses and buildings?",
+            "a": "Yes. PropertyCare and FacilityCare plans cover landlords, residential buildings, offices, retail and public facilities, with scheduled visits and reporting."
+          }
+        },
+        "bookings": {
+          "q1": {
+            "q": "How do I book a service?",
+            "a": "Book on neamatcare.com: choose the service, add your address and pick a time slot. You'll receive a confirmation with your technician's details."
+          },
+          "q2": {
+            "q": "Can I reschedule or cancel?",
+            "a": "Yes. You can reschedule or cancel from your booking at no cost up to a few hours before the appointment."
+          },
+          "q3": {
+            "q": "How do I pay?",
+            "a": "You'll see the price before you confirm. Payment is collected when the job is completed, and online payment options are being added."
+          },
+          "q4": {
+            "q": "Will I get an invoice?",
+            "a": "Yes. A digital invoice is saved to your service history after every completed job."
+          }
+        },
+        "privacy": {
+          "q1": {
+            "q": "What personal data do you collect?",
+            "a": "Only what we need to provide our services — such as your name, contact details, address and service history. Our Privacy Policy explains this in full."
+          },
+          "q2": {
+            "q": "Do you sell my data?",
+            "a": "No. We never sell personal data. We share it only with the people needed to deliver your service, such as the assigned technician."
+          },
+          "q3": {
+            "q": "How do I update or delete my information?",
+            "a": "Contact our support team and we'll update or delete your data, subject to any records we're legally required to keep."
+          },
+          "q4": {
+            "q": "Which languages are supported?",
+            "a": "Our websites support English and Arabic, and the NEAMAT CARE platform also supports Bangla."
+          }
+        }
+      }
+    },
+    "still": {
+      "title": "Still need help?",
+      "text": "Our support team is ready to help with anything not covered here.",
+      "support": "Contact support",
+      "email": "Email us"
+    }
+  },
+  "SupportPage": {
+    "metaTitle": "Customer Support",
+    "metaDescription": "Get help from NEAMAT GLOBAL customer support — phone, email, live chat and NEAMAT CARE bookings, with support for every company in the group.",
+    "breadcrumb": "Customer Support",
+    "eyebrow": "Customer Support",
+    "title": "Real help,",
+    "titleHighlight": "when you need it.",
+    "subtitle": "Reach our support team by phone, email or chat — we'll make sure the right specialist picks up your request.",
+    "imageAlt": "A customer support agent with a headset working at her desk",
+    "channels": {
+      "phone": {
+        "title": "Call us",
+        "text": "Speak to our support team."
+      },
+      "email": {
+        "title": "Email support",
+        "text": "We reply within one working day."
+      },
+      "chat": {
+        "title": "Live chat",
+        "text": "Use the chat button on any page.",
+        "value": "Bottom corner of the screen"
+      },
+      "booking": {
+        "title": "Book a service",
+        "text": "Need a technician at home?",
+        "value": "Go to NEAMAT CARE"
+      }
+    },
+    "units": {
+      "eyebrow": "Support by Company",
+      "title": "Specialist help for",
+      "titleHighlight": "every company.",
+      "description": "Tell us which company your request is about and it goes straight to the right team.",
+      "cta": "Email this team",
+      "items": {
+        "neopure": "Purifier setup, filter replacements, water testing and product warranty.",
+        "propertyos": "Account access, onboarding, billing and help using the platform.",
+        "booleanforce": "Project support, maintenance and service requests for our clients.",
+        "neamatcare": "Bookings, technician visits, invoices and service warranty claims."
+      }
+    },
+    "process": {
+      "eyebrow": "Our Promise",
+      "title": "Every request,",
+      "titleHighlight": "followed through.",
+      "steps": {
+        "log": {
+          "title": "We log it",
+          "text": "Your request gets a reference number so you can follow its progress."
+        },
+        "assign": {
+          "title": "We assign a specialist",
+          "text": "It goes to the team that knows the product or service best."
+        },
+        "resolve": {
+          "title": "We resolve and confirm",
+          "text": "We fix the issue and check with you that everything is right."
+        }
+      },
+      "chips": {
+        "hours": "Sunday – Thursday, 9:00 – 18:00",
+        "response": "Reply within one working day",
+        "languages": "English, Arabic & Bangla"
+      }
+    }
+  },
+  "Legal": {
+    "eyebrow": "Legal",
+    "updated": "Last updated:",
+    "contents": "Contents",
+    "questions": "Questions about this policy?",
+    "questionsText": "Contact us and our team will be happy to help."
+  },
+  "PrivacyPage": {
+    "metaTitle": "Privacy Policy",
+    "metaDescription": "How NEAMAT GLOBAL and its companies collect, use and protect your personal data.",
+    "breadcrumb": "Privacy Policy",
+    "title": "Privacy Policy",
+    "subtitle": "How we collect, use and protect your personal information.",
+    "intro": "NEAMAT GLOBAL and its companies — NeaPure, PropertyOS, BooleanForce and NEAMAT CARE — respect your privacy. This policy explains what personal data we collect, why we collect it and the choices you have.",
+    "sections": {
+      "scope": {
+        "title": "Who this policy covers",
+        "body": [
+          "This policy applies to neamatglobal.com and to the websites, platforms and services of the NEAMAT GLOBAL companies, unless a service has its own privacy notice.",
+          "NEAMAT GLOBAL is the controller of the personal data described here. Where a group company provides a service to you directly, that company is also responsible for your data."
+        ]
+      },
+      "collect": {
+        "title": "Information we collect",
+        "body": [
+          "Information you give us, such as your name, email address, phone number, address, company and the details of your enquiry, booking or job application.",
+          "Information created when you use our services, such as service history, invoices and communication with our teams.",
+          "Technical information, such as your device type, browser, approximate location and how you use our websites, collected through cookies and similar technologies."
+        ]
+      },
+      "use": {
+        "title": "How we use your information",
+        "body": [
+          "To respond to enquiries, provide and improve our services, schedule and complete service visits, process payments and provide customer support.",
+          "To send service messages and, where you have agreed, news about our companies. You can unsubscribe from marketing at any time.",
+          "To keep our services secure, prevent fraud and meet our legal obligations."
+        ]
+      },
+      "share": {
+        "title": "How we share information",
+        "body": [
+          "We share personal data within the NEAMAT GLOBAL group only where it is needed to provide the service you asked for — for example, with a NEAMAT CARE technician assigned to your booking.",
+          "We use trusted service providers for hosting, communication and payments, under contracts that protect your data. We do not sell personal data."
+        ]
+      },
+      "retention": {
+        "title": "How long we keep it",
+        "body": [
+          "We keep personal data only as long as needed for the purposes described here, or as required by law. Service and invoice records may be kept for accounting and warranty purposes."
+        ]
+      },
+      "rights": {
+        "title": "Your rights",
+        "body": [
+          "Depending on where you live, you may have the right to access, correct or delete your personal data, to object to or restrict certain processing, and to withdraw consent.",
+          "To exercise these rights, contact us using the details below. We may need to verify your identity before responding."
+        ]
+      },
+      "security": {
+        "title": "How we protect your data",
+        "body": [
+          "We use technical and organisational measures — including encryption, access controls and staff training — to protect personal data against loss, misuse and unauthorised access."
+        ]
+      },
+      "cookies": {
+        "title": "Cookies",
+        "body": [
+          "We use essential cookies to make our websites work and, with your consent where required, analytics cookies to understand how they are used. You can control cookies in your browser settings."
+        ]
+      },
+      "changes": {
+        "title": "Changes to this policy",
+        "body": [
+          "We may update this policy from time to time. The date at the top of this page shows when it was last revised, and significant changes will be highlighted on our website."
+        ]
+      }
+    }
+  },
+  "TermsPage": {
+    "metaTitle": "Terms & Conditions",
+    "metaDescription": "The terms that apply when you use the NEAMAT GLOBAL website and the services of its companies.",
+    "breadcrumb": "Terms & Conditions",
+    "title": "Terms & Conditions",
+    "subtitle": "The rules for using our website and services.",
+    "intro": "These terms apply to your use of neamatglobal.com. Services provided by NEAMAT GLOBAL companies, such as NEAMAT CARE bookings, may also have their own service terms.",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of these terms",
+        "body": [
+          "By using this website you agree to these terms. If you do not agree, please do not use the website."
+        ]
+      },
+      "about": {
+        "title": "About us",
+        "body": [
+          "This website is operated by NEAMAT GLOBAL, headquartered in Riyadh, Kingdom of Saudi Arabia, on behalf of the group and its companies NeaPure, PropertyOS, BooleanForce and NEAMAT CARE."
+        ]
+      },
+      "use": {
+        "title": "Using our website",
+        "body": [
+          "You may use this website for lawful purposes only. You must not attempt to gain unauthorised access to it, interfere with its operation or use it to send unsolicited messages.",
+          "We aim to keep the website available and accurate, but we may change, suspend or withdraw content at any time without notice."
+        ]
+      },
+      "ip": {
+        "title": "Intellectual property",
+        "body": [
+          "The content, logos, trademarks and design of this website belong to NEAMAT GLOBAL or its licensors. You may view and share pages for personal, non-commercial use, but you may not copy or reuse them for other purposes without our written permission."
+        ]
+      },
+      "services": {
+        "title": "Products and services",
+        "body": [
+          "Information about our companies' products and services is provided for general information. Specific prices, availability and conditions are confirmed when you place an order or booking and are governed by the relevant service terms."
+        ]
+      },
+      "links": {
+        "title": "Links to other websites",
+        "body": [
+          "Our website may link to other websites, including those of our companies and partners. We are not responsible for the content or practices of websites we do not operate."
+        ]
+      },
+      "liability": {
+        "title": "Limitation of liability",
+        "body": [
+          "To the extent permitted by law, NEAMAT GLOBAL is not liable for any indirect or consequential loss arising from the use of this website. Nothing in these terms limits liability that cannot be limited by law."
+        ]
+      },
+      "law": {
+        "title": "Governing law",
+        "body": [
+          "These terms are governed by the laws of the Kingdom of Saudi Arabia, and any disputes are subject to the jurisdiction of its competent courts, unless the law of your country of residence requires otherwise."
+        ]
+      },
+      "changes": {
+        "title": "Changes to these terms",
+        "body": [
+          "We may update these terms from time to time. The updated version applies from the date shown at the top of this page."
+        ]
+      }
+    }
   }
 }

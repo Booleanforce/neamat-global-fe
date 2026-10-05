@@ -8,7 +8,7 @@ import { SectionHeading } from "@/components/common/section-heading";
 import { sections } from "@/config/site";
 
 /** Section 6 — Global Presence: dark chapter with animated route map and market cards. */
-export async function GlobalPresence() {
+export async function GlobalPresence({ showCta = true }: { showCta?: boolean } = {}) {
   const t = await getTranslations("Presence");
   const locale = await getLocale();
 
@@ -51,9 +51,15 @@ export async function GlobalPresence() {
           }
           description={t("description")}
           aside={
-            <GoldPillButton href={`/${locale}/about`} size="lg" className="shadow-glow-gold">
-              {t("cta")}
-            </GoldPillButton>
+            showCta && (
+              <GoldPillButton
+                href={`/${locale}/global-presence`}
+                size="lg"
+                className="shadow-glow-gold"
+              >
+                {t("cta")}
+              </GoldPillButton>
+            )
           }
         />
 
@@ -61,7 +67,7 @@ export async function GlobalPresence() {
           <Reveal className="relative">
             <div
               aria-hidden="true"
-              className="bg-navy-bright/40 absolute inset-[15%] -z-10 rounded-full blur-[90px]"
+              className="bg-navy-bright/40 glow absolute inset-[15%] -z-10 rounded-full"
             />
             <WorldMap
               tone="dark"

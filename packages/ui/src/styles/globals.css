@@ -337,6 +337,10 @@
   );
   background-size: 200% 100%;
 }
+/* Soft colour glow: a radial alpha mask instead of filter: blur() — same look, no GPU filter layer. */
+@utility glow {
+  mask-image: radial-gradient(closest-side, black 15%, transparent 100%);
+}
 @utility mask-fade-b {
   mask-image: linear-gradient(to bottom, black 55%, transparent);
 }

@@ -34,21 +34,24 @@ export function Footer({
   closingLine,
 }: FooterProps) {
   return (
-    <footer className="relative isolate overflow-hidden bg-navy-ink text-on-navy">
+    <footer className="bg-navy-ink text-on-navy relative isolate overflow-hidden">
       {/* Gold top edge, grid texture and a soft glow */}
       <span
         aria-hidden="true"
-        className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-gold to-transparent"
+        className="via-gold absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent to-transparent"
       />
-      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-grid-light mask-fade-b opacity-60" />
       <div
         aria-hidden="true"
-        className="absolute -top-40 start-1/4 -z-10 size-[420px] rounded-full bg-navy-bright/30 blur-[120px]"
+        className="bg-grid-light mask-fade-b absolute inset-0 -z-10 opacity-60"
+      />
+      <div
+        aria-hidden="true"
+        className="bg-navy-bright/30 glow absolute start-1/4 -top-40 -z-10 size-[420px] rounded-full"
       />
       <div className="container-site grid gap-10 py-12 md:grid-cols-2 lg:grid-cols-[1.4fr_repeat(3,1fr)_1fr_1.6fr] lg:gap-8 lg:py-14">
         <div className="md:col-span-2 lg:col-span-1">
           <Logo href={homeHref} label={logoLabel} tone="light" goldAccent />
-          <p className="mt-4 text-xs text-on-navy">{tagline}</p>
+          <p className="text-on-navy mt-4 text-xs">{tagline}</p>
         </div>
 
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 md:col-span-2 lg:col-span-3 lg:grid-cols-3">
@@ -71,7 +74,7 @@ export function Footer({
         <p>{copyright}</p>
         <p className="flex items-center gap-3">
           <span>{closingLine}</span>
-          <span aria-hidden="true" className="h-px w-8 bg-gold" />
+          <span aria-hidden="true" className="bg-gold h-px w-8" />
         </p>
       </div>
     </footer>
