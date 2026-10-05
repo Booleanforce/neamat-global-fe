@@ -3,7 +3,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { Header } from "@neamat/ui/components/brand/header";
 import type { LanguageOption, NavLink } from "@neamat/ui/lib/types";
-import { careHref } from "@/config/site";
+import { businessHref } from "@/config/site";
 import { businesses } from "@/content/businesses";
 import { usePathname } from "@/i18n/navigation";
 import { getDirection, localeLabels, routing, type Locale } from "@/i18n/routing";
@@ -28,10 +28,7 @@ export function SiteHeader() {
       href: `${home}/businesses`,
       children: businesses.map((business) => ({
         label: business.plainName,
-        href:
-          business.key === "neamatcare"
-            ? careHref(locale)
-            : (business.href ?? `${home}/businesses`),
+        href: business.href ?? businessHref(locale, business.key),
         description: tBusinesses(`${business.key}.category`),
       })),
     },

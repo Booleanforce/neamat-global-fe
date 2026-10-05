@@ -1,6 +1,6 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { Footer } from "@neamat/ui/components/brand/footer";
-import { careHref } from "@/config/site";
+import { businessHref } from "@/config/site";
 import { businesses } from "@/content/businesses";
 import { socialProfiles } from "@/content/social";
 import { NewsletterSignup } from "./newsletter-signup";
@@ -22,10 +22,7 @@ export async function SiteFooter() {
           title: t("columns.businesses"),
           links: businesses.map((business) => ({
             label: business.plainName,
-            href:
-              business.key === "neamatcare"
-                ? careHref(locale)
-                : (business.href ?? `${home}/businesses`),
+            href: business.href ?? businessHref(locale, business.key),
           })),
         },
         {

@@ -5,6 +5,24 @@ export const siteConfig = {
   careUrl: process.env.NEXT_PUBLIC_CARE_URL ?? "https://neamatcare.com",
 } as const;
 
+/**
+ * Public contact details.
+ * NOTE: placeholders until the client confirms the real addresses, numbers and mailboxes.
+ */
+export const contactInfo = {
+  email: "info@neamatglobal.com",
+  careersEmail: "careers@neamatglobal.com",
+  supportEmail: "support@neamatglobal.com",
+  mediaEmail: "media@neamatglobal.com",
+  phoneSaudi: "+966 11 000 0000",
+  phoneBangladesh: "+880 2 0000 0000",
+} as const;
+
+/** `tel:` href for a display phone number. */
+export function telHref(phone: string) {
+  return `tel:${phone.replace(/[^\d+]/g, "")}`;
+}
+
 /** In-page section anchors (ids on the home page). */
 export const sections = {
   businesses: "businesses",
@@ -14,31 +32,28 @@ export const sections = {
   news: "news",
 } as const;
 
-/**
- * Pages that render the "coming soon" template until the client signs off on their content.
- * Only Home and About are published. The home-page sections for businesses / presence / news stay
- * in place; to publish a dedicated page, build its route and drop its slug from this list.
- */
-export const placeholderPages = [
-  "businesses",
-  "global-presence",
-  "news",
-  "neamat-care",
-  "careers",
-  "contact",
-  "help",
-  "support",
-  "privacy",
-  "terms",
+/** Every published page (locale-relative), used by the sitemap. */
+export const sitePages = [
+  "",
+  "/about",
+  "/businesses",
+  "/global-presence",
+  "/neamat-care",
+  "/news",
+  "/careers",
+  "/contact",
+  "/help",
+  "/support",
+  "/privacy",
+  "/terms",
 ] as const;
-export type PlaceholderPage = (typeof placeholderPages)[number];
 
-/**
- * Where NEAMAT CARE links go: its "coming soon" page while `neamat-care` is a placeholder, and the
- * product site (`siteConfig.careUrl`, opened in a new tab) once that slug is removed.
- */
-export const careComingSoon = (placeholderPages as readonly string[]).includes("neamat-care");
-
+/** NEAMAT CARE's overview page on the group site (its CTA links on to the product site). */
 export function careHref(locale: string) {
-  return careComingSoon ? `/${locale}/neamat-care` : siteConfig.careUrl;
+  return `/${locale}/neamat-care`;
+}
+
+/** Anchor for a business unit on the Our Businesses page. */
+export function businessHref(locale: string, key: string) {
+  return key === "neamatcare" ? careHref(locale) : `/${locale}/businesses#${key}`;
 }

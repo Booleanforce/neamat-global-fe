@@ -10,7 +10,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@neamat/ui/components/ui/dialog";
-import { sections } from "@/config/site";
+import { careHref } from "@/config/site";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { closeSearch } from "@/store/slices/ui-slice";
 
@@ -28,7 +28,7 @@ export function SiteSearch() {
   const links = [
     { label: t("nav.about"), href: `${home}/about` },
     { label: t("nav.businesses"), href: `${home}/businesses` },
-    { label: "NEAMAT CARE", href: `${home}#${sections.care}` },
+    { label: "NEAMAT CARE", href: careHref(locale) },
     { label: t("nav.presence"), href: `${home}/global-presence` },
     { label: t("nav.news"), href: `${home}/news` },
     { label: t("nav.careers"), href: `${home}/careers` },

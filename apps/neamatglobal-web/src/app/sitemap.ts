@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next";
-import { placeholderPages, siteConfig } from "@/config/site";
+import { siteConfig, sitePages } from "@/config/site";
+import { newsItems } from "@/content/news";
 import { routing } from "@/i18n/routing";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const paths = ["", "/about", ...placeholderPages.map((slug) => `/${slug}`)];
+  const paths = [...sitePages, ...newsItems.map(({ slug }) => `/news/${slug}`)];
 
   return paths.map((path) => ({
     url: `${siteConfig.url}/${routing.defaultLocale}${path}`,
