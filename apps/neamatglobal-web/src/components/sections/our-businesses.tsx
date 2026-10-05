@@ -3,7 +3,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { BusinessCard } from "@neamat/ui/components/brand/business-card";
 import { Stagger, StaggerItem } from "@neamat/ui/components/brand/reveal";
 import { SectionHeading } from "@/components/common/section-heading";
-import { careHref, sections } from "@/config/site";
+import { businessHref, sections } from "@/config/site";
 import { businesses } from "@/content/businesses";
 
 type OurBusinessesProps = {
@@ -57,11 +57,7 @@ export async function OurBusinesses({
         <Stagger as="ul" className="mt-14 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {businesses.map((business, index) => {
             const Icon = business.icon;
-            // NEAMAT CARE links out to its own product site; other units go to the "coming soon" businesses page.
-            const href =
-              business.key === "neamatcare"
-                ? careHref(locale)
-                : (business.href ?? `/${locale}/businesses`);
+            const href = business.href ?? businessHref(locale, business.key);
             return (
               <StaggerItem as="li" key={business.key}>
                 <BusinessCard

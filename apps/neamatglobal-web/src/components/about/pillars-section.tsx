@@ -61,7 +61,7 @@ export async function PillarsSection() {
                 </p>
                 <span
                   aria-hidden="true"
-                  className="bg-gold/15 absolute -end-6 -bottom-6 -z-10 size-32 rounded-full blur-2xl transition-opacity group-hover:opacity-100"
+                  className="bg-gold/15 glow absolute -end-6 -bottom-6 -z-10 size-32 rounded-full transition-opacity group-hover:opacity-100"
                 />
               </article>
             </StaggerItem>
