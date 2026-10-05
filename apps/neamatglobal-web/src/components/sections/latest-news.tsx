@@ -28,7 +28,7 @@ export async function LatestNews() {
       title: t(`items.${item.key}.title`),
       category: unit?.plainName,
       categoryClassName: unit?.accent.tile,
-      href: `/${locale}/news`,
+      href: `/${locale}/news/${item.slug}`,
       linkLabel: tCommon("readMore"),
     };
   });
@@ -42,7 +42,7 @@ export async function LatestNews() {
     >
       <div
         aria-hidden="true"
-        className="bg-gold/10 absolute -end-32 top-0 -z-10 size-96 rounded-full blur-3xl"
+        className="bg-gold/10 glow absolute -end-32 top-0 -z-10 size-96 rounded-full"
       />
 
       <div className="container-site">

@@ -4,7 +4,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { ChevronDown, Globe2, LayoutGrid, UsersRound } from "lucide-react";
 import { GoldPillButton } from "@neamat/ui/components/brand/gold-pill-button";
 import { CountUp, Reveal } from "@neamat/ui/components/brand/reveal";
-import { careHref, sections } from "@/config/site";
+import { businessHref, careHref, sections } from "@/config/site";
 import { businesses } from "@/content/businesses";
 
 /** Section 2 — immersive hero: skyline, layered navy/gold light, glass stats and business strip. */
@@ -38,11 +38,11 @@ export async function Hero() {
       <div aria-hidden="true" className="bg-grid-light mask-fade-b absolute inset-0 -z-10" />
       <div
         aria-hidden="true"
-        className="bg-gold/25 absolute -start-40 top-1/3 -z-10 size-[520px] rounded-full blur-[120px]"
+        className="bg-gold/25 glow absolute -start-40 top-1/3 -z-10 size-[520px] rounded-full"
       />
       <div
         aria-hidden="true"
-        className="bg-navy-bright/40 absolute end-1/4 -top-40 -z-10 size-[420px] rounded-full blur-[110px]"
+        className="bg-navy-bright/40 glow absolute end-1/4 -top-40 -z-10 size-[420px] rounded-full"
       />
 
       <div className="container-site relative flex min-h-[620px] flex-col justify-center pt-20 pb-36 sm:min-h-[680px] lg:min-h-[740px] lg:pb-40">
@@ -134,9 +134,7 @@ export async function Hero() {
                 return (
                   <Link
                     key={business.key}
-                    href={
-                      business.key === "neamatcare" ? careHref(locale) : `/${locale}/businesses`
-                    }
+                    href={business.href ?? businessHref(locale, business.key)}
                     className="group flex min-h-16 items-center gap-3 px-4 py-3 transition-colors hover:bg-white/10"
                   >
                     <span
