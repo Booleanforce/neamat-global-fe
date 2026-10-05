@@ -19,7 +19,7 @@ export async function CtaBand() {
             <div aria-hidden="true" className="bg-grid-light absolute inset-0 -z-10" />
             <div
               aria-hidden="true"
-              className="bg-gold/30 absolute start-1/2 -bottom-32 -z-10 size-[480px] -translate-x-1/2 rounded-full blur-[100px]"
+              className="bg-gold/30 glow absolute start-1/2 -bottom-32 -z-10 size-[480px] -translate-x-1/2 rounded-full"
             />
             <LogoMark className="absolute -end-10 -top-10 -z-10 size-56 text-white/5 rtl:-scale-x-100" />
 

@@ -17,10 +17,23 @@
     ]
   },
   "sources": {
-    "tokens": ["packages/ui/src/styles/globals.css", "packages/ui/src/lib/tokens.ts"],
-    "components": ["packages/ui/src/components/ui", "packages/ui/src/components/brand"],
-    "assets": ["apps/neamatglobal-web/public/images"],
-    "instructions": ["../CLAUDE.md", "../PROGRESS.md", "../docs/Neamat_Global_App_Plan.pdf", "AGENTS.md"]
+    "tokens": [
+      "packages/ui/src/styles/globals.css",
+      "packages/ui/src/lib/tokens.ts"
+    ],
+    "components": [
+      "packages/ui/src/components/ui",
+      "packages/ui/src/components/brand"
+    ],
+    "assets": [
+      "apps/neamatglobal-web/public/images"
+    ],
+    "instructions": [
+      "../CLAUDE.md",
+      "../PROGRESS.md",
+      "../docs/Neamat_Global_App_Plan.pdf",
+      "AGENTS.md"
+    ]
   },
   "design": {
     "colorMode": "light-only (navy chapters provide contrast; no dark theme)",
@@ -33,7 +46,10 @@
       "muted-text": "#64788B",
       "surface": "#F5F8FB",
       "derived": "gold-light, gold-deep, gold-hover, navy-bright, navy-ink, on-navy, border — color-mix of brand tokens only",
-      "status": { "destructive": "#B42318", "success": "#0E7C56" },
+      "status": {
+        "destructive": "#B42318",
+        "success": "#0E7C56"
+      },
       "business-units": {
         "neopure": "#1C7FD6",
         "propertyos": "#5A2D91",
@@ -47,27 +63,100 @@
       "bengali": "Noto Sans Bengali",
       "scale": "H1 extrabold tight (42→72px), H2 extrabold (30→44px), eyebrow = uppercase 11px bold pill"
     },
-    "spacing": { "container": "80rem", "sectionY": "py-20 lg:py-28", "gutter": "16px mobile / 24px sm / 32px lg" },
-    "radius": { "base": "0.625rem", "cards": "rounded-2xl", "showcase": "rounded-[2rem]", "buttons": "rounded-full" },
-    "shadows": ["shadow-card", "shadow-card-hover", "shadow-elevated", "shadow-glow-gold", "shadow-glow-navy"],
+    "spacing": {
+      "container": "80rem",
+      "sectionY": "py-20 lg:py-28",
+      "gutter": "16px mobile / 24px sm / 32px lg"
+    },
+    "radius": {
+      "base": "0.625rem",
+      "cards": "rounded-2xl",
+      "showcase": "rounded-[2rem]",
+      "buttons": "rounded-full"
+    },
+    "shadows": [
+      "shadow-card",
+      "shadow-card-hover",
+      "shadow-elevated",
+      "shadow-glow-gold",
+      "shadow-glow-navy"
+    ],
     "motion": {
       "library": "framer-motion",
-      "patterns": ["Reveal (whileInView once, 0.6s)", "Stagger 0.09s", "CountUp", "hover lift 2-4px", "SVG route draw", "float / pulse-ring keyframes"],
+      "patterns": [
+        "Reveal (whileInView once, 0.6s)",
+        "Stagger 0.09s",
+        "CountUp",
+        "hover lift 2-4px",
+        "SVG route draw",
+        "float / pulse-ring keyframes",
+        "glow = radial alpha mask (no filter: blur) for decorative colour glows"
+      ],
       "reducedMotion": "MotionConfig reducedMotion=user + motion-reduce:animate-none; counters show final value"
     },
     "density": "comfortable (marketing), standard (admin)"
   },
   "components": {
     "installed": [
-      "avatar", "badge", "button", "card", "checkbox", "dialog", "dropdown-menu", "field", "input", "input-group",
-      "label", "navigation-menu", "scroll-area", "select", "separator", "sheet", "sidebar", "skeleton", "sonner",
-      "table", "tabs", "textarea", "tooltip"
+      "accordion",
+      "avatar",
+      "badge",
+      "button",
+      "card",
+      "checkbox",
+      "dialog",
+      "dropdown-menu",
+      "field",
+      "input",
+      "input-group",
+      "label",
+      "navigation-menu",
+      "scroll-area",
+      "select",
+      "separator",
+      "sheet",
+      "sidebar",
+      "skeleton",
+      "sonner",
+      "table",
+      "tabs",
+      "textarea",
+      "tooltip"
     ],
-    "preferredPrimitives": ["shadcn Button (brand variants gold/navy/outline-navy, sizes pill*)", "shadcn Card", "shadcn Sheet", "shadcn NavigationMenu", "shadcn Field + InputGroup"],
+    "preferredPrimitives": [
+      "shadcn Button (brand variants gold/navy/outline-navy, sizes pill*)",
+      "shadcn Card",
+      "shadcn Sheet",
+      "shadcn NavigationMenu",
+      "shadcn Field + InputGroup"
+    ],
     "patterns": [
-      "Header", "Footer", "GoldPillButton", "SectionEyebrow (pill)", "SectionHeading", "BusinessCard", "NewsCard (featured + compact)",
-      "WorldMap (dotted mask + animated route)", "StatItem / glass stat cards", "Reveal / Stagger / CountUp", "PageHero", "CtaBand",
-      "glass-light / glass-dark", "bg-mesh-navy / bg-mesh-light", "bg-grid-*", "bg-dots-gold", "text-gradient-gold / -navy"
+      "Header",
+      "Footer",
+      "GoldPillButton",
+      "SectionEyebrow (pill)",
+      "SectionHeading",
+      "BusinessCard",
+      "NewsCard (featured + compact)",
+      "WorldMap (dotted mask + animated route)",
+      "StatItem / glass stat cards",
+      "Reveal / Stagger / CountUp",
+      "PageHero",
+      "CtaBand",
+      "glass-light / glass-dark",
+      "bg-mesh-navy / bg-mesh-light",
+      "bg-grid-*",
+      "bg-dots-gold",
+      "text-gradient-gold / -navy",
+      "StatsBand (glass stat strip overlapping PageHero)",
+      "ProcessSteps (numbered, light/dark)",
+      "QuickLinks",
+      "FilterChips (aria-pressed toggles)",
+      "StoryCard / LeadStory",
+      "UnitShowcase (alternating unit chapters)",
+      "LegalDocument (sticky TOC)",
+      "FaqTabs (shadcn Tabs + Accordion)",
+      "glow (radial mask glow)"
     ]
   },
   "constraints": {
@@ -83,7 +172,8 @@
       "New hex colours outside globals.css",
       "Gold text for body copy on white (1.8:1)",
       "Animating layout properties (width/height/top/left)",
-      "Hand-rolled primitives when a shadcn one exists"
+      "Hand-rolled primitives when a shadcn one exists",
+      "Large filter: blur() glow layers (GPU stalls on low-memory devices) — use the `glow` utility"
     ]
   },
   "decisions": [
@@ -91,18 +181,44 @@
       "date": "2026-09-30",
       "decision": "Vibrant direction for the marketing site: alternating navy/light 'chapters', gradient meshes, glass cards, gold gradient text, scroll-reveal motion, animated counters and map route.",
       "reason": "Client feedback: the first build looked too minimal; wanted vibrant, modern and gorgeous within the fixed brand palette.",
-      "grounding": ["ui-ux-pro-max: Scroll-Triggered Storytelling + Liquid Glass", "21st: Glassmorphism Trust Hero, Milestone Timeline, World Map (aceternity)"]
+      "grounding": [
+        "ui-ux-pro-max: Scroll-Triggered Storytelling + Liquid Glass",
+        "21st: Glassmorphism Trust Hero, Milestone Timeline, World Map (aceternity)"
+      ]
     },
     {
       "date": "2026-09-30",
       "decision": "Section eyebrows are pills (navy text on gold tint on light backgrounds).",
       "reason": "Gold text on white fails WCAG AA."
+    },
+    {
+      "date": "2026-10-05",
+      "decision": "All remaining landing pages built in the same vibrant chapter system (Businesses, Global Presence, NEAMAT CARE, News + articles, Careers, Contact, Help, Support, Privacy, Terms); photos replaced with 1600–2400px originals.",
+      "reason": "Client request: finish the other landing pages, modern/professional/vibrant, with good photo quality.",
+      "grounding": [
+        "21st: Contact Card, Tabbed FAQ Accordion, Job Listing",
+        "ui-ux-pro-max: a11y/forms/contrast checks"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "decision": "Decorative glows use the `glow` utility (radial mask) instead of blur-[100px+] filters.",
+      "reason": "Stacked 420px filter-blur layers froze Chrome's compositor during QA on an 8 GB machine."
     }
   ],
   "evidence": [
-    { "fact": "design.colors", "source": "packages/ui/src/styles/globals.css" },
-    { "fact": "components.installed", "source": "packages/ui/src/components/ui" },
-    { "fact": "constraints.must[0]", "source": "packages/config/eslint/theme-lock.mjs" }
+    {
+      "fact": "design.colors",
+      "source": "packages/ui/src/styles/globals.css"
+    },
+    {
+      "fact": "components.installed",
+      "source": "packages/ui/src/components/ui"
+    },
+    {
+      "fact": "constraints.must[0]",
+      "source": "packages/config/eslint/theme-lock.mjs"
+    }
   ],
   "generatedAt": "2026-09-30T01:18:54.121Z"
 }

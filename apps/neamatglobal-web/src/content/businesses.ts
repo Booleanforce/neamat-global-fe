@@ -14,7 +14,7 @@ export type Business = {
   /** Token utilities for the unit's logo colour (defined in @neamat/ui globals.css). */
   accent: { tile: string; text: string; hoverTile: string };
   image: string;
-  /** External site once each unit launches; `null` → anchor on this page. */
+  /** External site once each unit launches; `null` → its section on the Our Businesses page. */
   href: string | null;
 };
 
