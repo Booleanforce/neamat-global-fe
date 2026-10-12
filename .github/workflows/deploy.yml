@@ -61,14 +61,21 @@ jobs:
             fi
             pm2 save
 
-            # Auto SSL Generation Check
-            DOMAIN="neamatglobal.com"
-            DOMAIN_IP=$(dig +short $DOMAIN | tail -n1 || echo "")
+            # Auto SSL Generation Check (Main and API Subdomain)
             SERVER_IP=$(curl -s -4 ifconfig.me || echo "")
-            if [ -n "$DOMAIN_IP" ] && [ "$DOMAIN_IP" = "$SERVER_IP" ]; then
-              echo "Domain points to this VPS. Generating/Renewing SSL..."
-              certbot --nginx -d neamatglobal.com -d www.neamatglobal.com --non-interactive --agree-tos -m admin@neamatglobal.com --redirect || true
+            MAIN_IP=$(dig +short neamatglobal.com | tail -n1 || echo "")
+            API_IP=$(dig +short api.neamatglobal.com | tail -n1 || echo "")
+
+            CERT_ARGS=""
+            if [ -n "$SERVER_IP" ] && [ "$MAIN_IP" = "$SERVER_IP" ]; then
+              CERT_ARGS="-d neamatglobal.com -d www.neamatglobal.com"
+            fi
+            if [ -n "$SERVER_IP" ] && [ "$API_IP" = "$SERVER_IP" ]; then
+              CERT_ARGS="$CERT_ARGS -d api.neamatglobal.com"
+            fi
+
+            if [ -n "$CERT_ARGS" ]; then
+              echo "Generating/Expanding SSL for $CERT_ARGS..."
+              certbot --nginx $CERT_ARGS --expand --non-interactive --agree-tos -m admin@neamatglobal.com --redirect || true
               systemctl reload nginx || true
-            else
-              echo "Domain DNS ($DOMAIN_IP) does not match Server IP ($SERVER_IP) yet. SSL will auto-generate once DNS points to this VPS."
             fi
