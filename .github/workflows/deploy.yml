@@ -21,7 +21,8 @@ jobs:
             --exclude='.turbo' \
             --exclude='.git' \
             --exclude='.vercel' \
-            . || [ $? -eq 1 ]
+            . || true
+          test -f /tmp/deploy.tar.gz
           mv /tmp/deploy.tar.gz ./deploy.tar.gz
 
       - name: Transfer Archive to VPS
