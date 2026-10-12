@@ -1,0 +1,74 @@
+name: Deploy Frontend to VPS
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Prepare Deployment Package
+        run: |
+          tar -czf deploy.tar.gz \
+            --exclude='node_modules' \
+            --exclude='.next' \
+            --exclude='.turbo' \
+            --exclude='.git' \
+            --exclude='.vercel' \
+            .
+
+      - name: Transfer Archive to VPS
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          password: ${{ secrets.VPS_PASSWORD }}
+          source: "deploy.tar.gz"
+          target: "/var/www/neamat-global-fe/"
+
+      - name: Deploy and Restart Frontend on VPS
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          password: ${{ secrets.VPS_PASSWORD }}
+          script: |
+            set -e
+            cd /var/www/neamat-global-fe
+            tar -xzf deploy.tar.gz
+            rm -f deploy.tar.gz
+
+            # Restore production env if needed
+            [ ! -f apps/neamatglobal-web/.env.production ] && [ -f apps/neamatglobal-web/.env.production.backup ] && cp apps/neamatglobal-web/.env.production.backup apps/neamatglobal-web/.env.production || true
+
+            # Install dependencies and build frontend
+            yarn install
+            yarn build:global
+
+            # Start or restart Next.js under PM2
+            if pm2 describe neamat-global-fe > /dev/null 2>&1; then
+              pm2 restart neamat-global-fe
+            else
+              pm2 start /var/www/neamat-global-fe/node_modules/.bin/next \
+                --name "neamat-global-fe" \
+                --cwd /var/www/neamat-global-fe/apps/neamatglobal-web \
+                -- start -p 3000
+            fi
+            pm2 save
+
+            # Auto SSL Generation Check
+            DOMAIN="neamatglobal.com"
+            DOMAIN_IP=$(dig +short $DOMAIN | tail -n1 || echo "")
+            SERVER_IP=$(curl -s -4 ifconfig.me || echo "")
+            if [ -n "$DOMAIN_IP" ] && [ "$DOMAIN_IP" = "$SERVER_IP" ]; then
+              echo "Domain points to this VPS. Generating/Renewing SSL..."
+              certbot --nginx -d neamatglobal.com -d www.neamatglobal.com --non-interactive --agree-tos -m admin@neamatglobal.com --redirect || true
+              systemctl reload nginx || true
+            else
+              echo "Domain DNS ($DOMAIN_IP) does not match Server IP ($SERVER_IP) yet. SSL will auto-generate once DNS points to this VPS."
+            fi
