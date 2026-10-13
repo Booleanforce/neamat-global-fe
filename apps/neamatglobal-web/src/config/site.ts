@@ -7,19 +7,35 @@ export const siteConfig = {
 
 /**
  * Public contact details.
- * NOTE: placeholders until the client confirms the real addresses, numbers and mailboxes.
  */
 export const contactInfo = {
-  email: "info@neamatglobal.com",
+  email: "corporate@neamatglobal.com",
+  corporateEmail: "corporate@neamatglobal.com",
   careersEmail: "careers@neamatglobal.com",
   supportEmail: "support@neamatglobal.com",
   mediaEmail: "media@neamatglobal.com",
-  phoneSaudi: "+966 11 000 0000",
-  phoneBangladesh: "+880 2 0000 0000",
+  corporatePhone: "+880 1817-886592",
+  phoneBangladesh: "+880 1817-886592",
+  phoneSaudi: null,
+  website: "neamatglobal.com",
+  headOffice: {
+    title: "Bangladesh Head Office",
+    streetAddress: "House 20, Road 13, Merul Badda",
+    cityPostal: "Dhaka 1212, Bangladesh",
+    fullAddress: "House 20, Road 13, Merul Badda, Dhaka 1212, Bangladesh",
+    phone: "+880 1817-886592",
+    email: "corporate@neamatglobal.com",
+    website: "neamatglobal.com",
+  },
+  saudiOffice: {
+    title: "Saudi Office",
+    status: "Up coming",
+  },
 } as const;
 
 /** `tel:` href for a display phone number. */
-export function telHref(phone: string) {
+export function telHref(phone?: string | null) {
+  if (!phone) return "";
   return `tel:${phone.replace(/[^\d+]/g, "")}`;
 }
 

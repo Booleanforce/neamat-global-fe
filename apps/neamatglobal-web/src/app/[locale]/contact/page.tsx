@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Building, Clock, Factory, Mail, MapPin, Phone } from "lucide-react";
+import { Building, Clock, Globe, Mail, MapPin, Phone } from "lucide-react";
 import { Reveal } from "@neamat/ui/components/brand/reveal";
 import { SectionEyebrow } from "@neamat/ui/components/brand/section-eyebrow";
 import { PageHero } from "@/components/common/page-hero";
 import { QuickLinks } from "@/components/common/quick-links";
 import { ContactForm } from "@/components/contact/contact-form";
-import { contactInfo, telHref } from "@/config/site";
+import { contactInfo, siteConfig, telHref } from "@/config/site";
 import { routing } from "@/i18n/routing";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -29,8 +29,8 @@ export default async function ContactPage({ params }: PageProps) {
   const tCommon = await getTranslations("Common");
 
   const offices = [
-    { key: "riyadh", icon: Building, phone: contactInfo.phoneSaudi },
-    { key: "dhaka", icon: Factory, phone: contactInfo.phoneBangladesh },
+    { key: "dhaka", icon: Building, phone: contactInfo.phoneBangladesh },
+    { key: "riyadh", icon: Building, phone: null },
   ] as const;
 
   return (
@@ -71,7 +71,7 @@ export default async function ContactPage({ params }: PageProps) {
               <ul className="mt-8 grid gap-3">
                 <li>
                   <a
-                    href={`mailto:${contactInfo.email}`}
+                    href={`mailto:${contactInfo.corporateEmail}`}
                     className="glass-dark group flex min-h-14 items-center gap-4 rounded-2xl p-4 transition-colors hover:bg-white/10"
                   >
                     <span className="bg-gold text-navy-deep grid size-11 shrink-0 place-items-center rounded-xl">
@@ -80,7 +80,41 @@ export default async function ContactPage({ params }: PageProps) {
                     <span className="min-w-0">
                       <span className="text-on-navy block text-xs">{t("direct.email")}</span>
                       <span className="block truncate font-semibold" dir="ltr">
-                        {contactInfo.email}
+                        {contactInfo.corporateEmail}
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={telHref(contactInfo.phoneBangladesh)}
+                    className="glass-dark group flex min-h-14 items-center gap-4 rounded-2xl p-4 transition-colors hover:bg-white/10"
+                  >
+                    <span className="bg-gold text-navy-deep grid size-11 shrink-0 place-items-center rounded-xl">
+                      <Phone aria-hidden="true" className="size-5" />
+                    </span>
+                    <span className="min-w-0">
+                      <span className="text-on-navy block text-xs">{t("direct.phone")}</span>
+                      <span className="block truncate font-semibold" dir="ltr">
+                        {contactInfo.phoneBangladesh}
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={siteConfig.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="glass-dark group flex min-h-14 items-center gap-4 rounded-2xl p-4 transition-colors hover:bg-white/10"
+                  >
+                    <span className="bg-gold/15 text-gold grid size-11 shrink-0 place-items-center rounded-xl">
+                      <Globe aria-hidden="true" className="size-5" />
+                    </span>
+                    <span className="min-w-0">
+                      <span className="text-on-navy block text-xs">{t("direct.website")}</span>
+                      <span className="block truncate font-semibold" dir="ltr">
+                        {contactInfo.website}
                       </span>
                     </span>
                   </a>
@@ -109,17 +143,28 @@ export default async function ContactPage({ params }: PageProps) {
                         {t(`offices.${key}.role`)}
                       </span>
                     </p>
-                    <p className="text-on-navy mt-1.5 flex items-start gap-2 text-sm">
+                    <div className="text-on-navy mt-1.5 flex items-start gap-2 text-sm">
                       <MapPin aria-hidden="true" className="mt-0.5 size-4 shrink-0" />
-                      {t(`offices.${key}.address`)}
-                    </p>
-                    <a
-                      href={telHref(phone)}
-                      className="text-on-navy mt-1 inline-flex min-h-9 items-center gap-2 text-sm hover:text-white"
-                    >
-                      <Phone aria-hidden="true" className="size-4" />
-                      <span dir="ltr">{phone}</span>
-                    </a>
+                      <div>
+                        {t(`offices.${key}.street`) ? (
+                          <>
+                            <span className="block">{t(`offices.${key}.street`)}</span>
+                            <span className="block">{t(`offices.${key}.cityPostal`)}</span>
+                          </>
+                        ) : (
+                          <span>{t(`offices.${key}.address`)}</span>
+                        )}
+                      </div>
+                    </div>
+                    {phone ? (
+                      <a
+                        href={telHref(phone)}
+                        className="text-on-navy mt-1 inline-flex min-h-9 items-center gap-2 text-sm hover:text-white"
+                      >
+                        <Phone aria-hidden="true" className="size-4" />
+                        <span dir="ltr">{phone}</span>
+                      </a>
+                    ) : null}
                   </li>
                 ))}
               </ul>

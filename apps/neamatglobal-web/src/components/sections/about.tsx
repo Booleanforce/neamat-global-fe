@@ -103,10 +103,10 @@ export async function About() {
             </span>
             <p className="text-sm leading-snug">
               <span className="block font-bold text-white">
-                {tPresence("saudi.name")} · {tPresence("bangladesh.name")}
+                {tPresence("bangladesh.name")} · {tPresence("saudi.name")}
               </span>
               <span className="text-on-navy">
-                {tPresence("saudi.role")} · {tPresence("bangladesh.role")}
+                {tPresence("bangladesh.role")} · {tPresence("saudi.role")}
               </span>
             </p>
           </div>

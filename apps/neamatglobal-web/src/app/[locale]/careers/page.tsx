@@ -115,8 +115,8 @@ export default async function CareersPage({ params }: PageProps) {
               roles={roles}
               filters={[
                 { key: "all", label: t("roles.filterAll") },
-                { key: "riyadh", label: t("roles.locations.riyadh") },
                 { key: "dhaka", label: t("roles.locations.dhaka") },
+                { key: "riyadh", label: t("roles.locations.riyadh") },
               ]}
               filterLabel={t("roles.filterLabel")}
               applyLabel={t("roles.apply")}

@@ -44,7 +44,7 @@
     "cta": "Explore Our Businesses",
     "secondaryCta": "Discover NEAMAT CARE",
     "imageAlt": "Riyadh skyline at sunset with the Kingdom Centre tower",
-    "badge": "A diversified group · Riyadh & Dhaka",
+    "badge": "A diversified group · Dhaka & Riyadh",
     "scroll": "Scroll to explore",
     "unitsLabel": "Our business units",
     "stats": {
@@ -62,17 +62,17 @@
   },
   "AboutPage": {
     "metaTitle": "About Us",
-    "metaDescription": "Learn about NEAMAT GLOBAL — a diversified group of companies built on trust, innovation and people, operating across Saudi Arabia and Bangladesh.",
+    "metaDescription": "Learn about NEAMAT GLOBAL — a diversified group of companies built on trust, innovation and people, headquartered in Bangladesh with an upcoming presence in Saudi Arabia.",
     "breadcrumb": "About Us",
     "eyebrow": "About Neamat Global",
     "title": "Building a group that",
     "titleHighlight": "moves the region forward.",
-    "subtitle": "Four focused companies. Two core markets. One commitment to making everyday life smarter, healthier and more sustainable.",
+    "subtitle": "Four focused companies. One commitment to making everyday life smarter, healthier and more sustainable.",
     "story": {
       "eyebrow": "Our Story",
       "title": "From one vision to four innovative companies.",
       "p1": "NEAMAT GLOBAL was founded with a simple belief: the services people rely on every day — clean water, well-kept homes, reliable property and modern technology — deserve world-class standards.",
-      "p2": "Headquartered in Riyadh with operations in Bangladesh, we build and operate businesses that share one design system, one culture and one promise: solutions, people and progress, together.",
+      "p2": "Headquartered in Dhaka, Bangladesh with an upcoming office in Saudi Arabia, we build and operate businesses that share one design system, one culture and one promise: solutions, people and progress, together.",
       "badgeValue": "2",
       "badgeLabel": "Core markets connected by one vision"
     },
@@ -126,8 +126,8 @@
       "items": {
         "founded": {
           "label": "The Beginning",
-          "title": "Founded in Riyadh",
-          "text": "NEAMAT GLOBAL establishes its head office in Saudi Arabia with a vision for diversified growth."
+          "title": "Head Office Founded",
+          "text": "NEAMAT GLOBAL establishes its head office in Bangladesh with a vision for diversified regional and global growth."
         },
         "neopure": {
           "label": "Water Technology",
@@ -136,8 +136,8 @@
         },
         "bangladesh": {
           "label": "Expansion",
-          "title": "Operations in Bangladesh",
-          "text": "We open operations in Bangladesh, our second core market."
+          "title": "Saudi Office Expansion",
+          "text": "We prepare our upcoming Saudi office in Riyadh to expand group operations across the Gulf region."
         },
         "digital": {
           "label": "Digital",
@@ -254,19 +254,19 @@
     "eyebrow": "Global Presence",
     "title": "Expanding Our Impact.",
     "titleLine2": "Across Borders.",
-    "description": "From Saudi Arabia to Bangladesh, and beyond — we are building a stronger, more connected future across the region and the world.",
+    "description": "From Bangladesh to Saudi Arabia, and beyond — we are building a stronger, more connected future across the region and the world.",
     "cta": "View Our Presence",
-    "mapAlt": "World map highlighting Saudi Arabia and Bangladesh",
+    "mapAlt": "World map highlighting Bangladesh and Saudi Arabia",
     "markets": {
-      "saudi": {
-        "name": "Saudi Arabia",
-        "role": "Head Office",
-        "imageAlt": "Riyadh skyline at dusk"
-      },
       "bangladesh": {
         "name": "Bangladesh",
-        "role": "Operations",
+        "role": "Head Office",
         "imageAlt": "Aerial view of Dhaka's dense city skyline"
+      },
+      "saudi": {
+        "name": "Saudi Arabia",
+        "role": "Up coming",
+        "imageAlt": "Riyadh skyline at dusk"
       },
       "future": {
         "name": "Future Markets"
@@ -275,6 +275,7 @@
     "chips": {
       "hq": "Head office",
       "ops": "Operations",
+      "upcoming": "Up coming",
       "next": "Next markets"
     }
   },
@@ -388,7 +389,7 @@
     "title": "We're here to help",
     "contact": {
       "title": "Contact us",
-      "text": "Send an enquiry to our team in Riyadh or Dhaka."
+      "text": "Send an enquiry to our team in Dhaka or Riyadh."
     },
     "support": {
       "title": "Customer support",
@@ -502,21 +503,21 @@
   },
   "PresencePage": {
     "metaTitle": "Global Presence",
-    "metaDescription": "NEAMAT GLOBAL is headquartered in Riyadh, Saudi Arabia, with operations in Dhaka, Bangladesh — and plans for further growth across the region.",
+    "metaDescription": "NEAMAT GLOBAL is headquartered in Dhaka, Bangladesh, with an upcoming office in Riyadh, Saudi Arabia — and plans for further growth across the region.",
     "breadcrumb": "Global Presence",
     "eyebrow": "Global Presence",
-    "title": "Rooted in Riyadh.",
+    "title": "Rooted in Dhaka.",
     "titleHighlight": "Growing across borders.",
-    "subtitle": "Our head office in Saudi Arabia and our operations hub in Bangladesh work as one team — serving customers, building technology and preparing for the markets ahead.",
+    "subtitle": "Our head office in Bangladesh and our upcoming office in Saudi Arabia work together — serving customers, building technology and preparing for the markets ahead.",
     "imageAlt": "Riyadh skyline at sunset with the Kingdom Centre tower",
     "stats": {
       "hq": {
-        "value": "Riyadh",
+        "value": "Dhaka",
         "label": "Head office"
       },
       "ops": {
-        "value": "Dhaka",
-        "label": "Operations hub"
+        "value": "Riyadh",
+        "label": "Upcoming office"
       },
       "units": "Business units",
       "team": "Team members"
@@ -527,22 +528,22 @@
       "titleHighlight": "One team.",
       "description": "Each location plays a distinct role, and together they cover strategy, service delivery and technology.",
       "unitsLabel": "Companies active here",
-      "saudi": {
-        "city": "Riyadh",
-        "text": "Our head office sets the group's strategy and leads our largest customer market. Saudi Arabia's rapid growth and focus on quality of life make it the natural home for our water, property and home-care services.",
-        "highlights": {
-          "h1": "Group leadership, strategy and partnerships",
-          "h2": "Launch market for NEAMAT CARE and NeaPure",
-          "h3": "Growth aligned with the Kingdom's long-term vision"
-        }
-      },
       "bangladesh": {
         "city": "Dhaka",
-        "text": "Our operations hub in Dhaka is home to engineering, product and service teams. It powers the group's technology and serves a fast-growing market of homes and businesses.",
+        "text": "Our head office in Dhaka is home to executive leadership, engineering, product and service operations. It powers the group's technology and serves a fast-growing market.",
         "highlights": {
-          "h1": "BooleanForce engineering and design teams",
-          "h2": "Service operations and customer support",
+          "h1": "Group headquarters and executive leadership",
+          "h2": "BooleanForce engineering and design teams",
           "h3": "PropertyOS and NEAMAT CARE platform development"
+        }
+      },
+      "saudi": {
+        "city": "Riyadh",
+        "text": "Our upcoming Saudi office in Riyadh is preparing to expand group operations across the Kingdom, bringing our water, property and home-care services to the regional market.",
+        "highlights": {
+          "h1": "Upcoming regional presence in Riyadh",
+          "h2": "Expansion of NEAMAT CARE and NeaPure services",
+          "h3": "Growth aligned with the Kingdom's long-term vision"
         }
       }
     },
@@ -892,7 +893,7 @@
   },
   "ContactPage": {
     "metaTitle": "Contact Us",
-    "metaDescription": "Get in touch with NEAMAT GLOBAL — enquiries, partnerships, media and customer questions. Offices in Riyadh, Saudi Arabia and Dhaka, Bangladesh.",
+    "metaDescription": "Get in touch with NEAMAT GLOBAL — enquiries, partnerships, media and customer questions. Bangladesh Head Office in Dhaka, and upcoming office in Saudi Arabia.",
     "breadcrumb": "Contact",
     "eyebrow": "Get in Touch",
     "title": "Let's start a",
@@ -902,22 +903,28 @@
     "direct": {
       "eyebrow": "Direct Contact",
       "title": "Talk to us directly",
-      "text": "Prefer email or phone? Reach our offices using the details below.",
-      "email": "Email us",
+      "text": "Prefer email or phone? Reach our team using the details below.",
+      "email": "Corporate Email",
+      "phone": "Corporate Phone",
+      "website": "Official Website",
       "hours": "Office hours",
       "hoursValue": "Sunday – Thursday, 9:00 – 18:00"
     },
     "offices": {
       "title": "Our offices",
-      "riyadh": {
-        "name": "Riyadh",
-        "role": "Head Office",
-        "address": "King Fahd Road, Riyadh, Kingdom of Saudi Arabia"
-      },
       "dhaka": {
-        "name": "Dhaka",
-        "role": "Operations",
-        "address": "Gulshan Avenue, Dhaka, Bangladesh"
+        "name": "Bangladesh Head Office",
+        "role": "Head Office",
+        "street": "House 20, Road 13, Merul Badda",
+        "cityPostal": "Dhaka 1212, Bangladesh",
+        "address": "House 20, Road 13, Merul Badda, Dhaka 1212, Bangladesh"
+      },
+      "riyadh": {
+        "name": "Saudi Office",
+        "role": "Up coming",
+        "street": "",
+        "cityPostal": "",
+        "address": "Up coming"
       }
     },
     "form": {
@@ -985,7 +992,7 @@
           },
           "q2": {
             "q": "Where do you operate?",
-            "a": "Our head office is in Riyadh, Saudi Arabia, and our operations hub is in Dhaka, Bangladesh. We are planning further growth across the Gulf and the wider region."
+            "a": "Our head office is in Dhaka, Bangladesh (House 20, Road 13, Merul Badda, Dhaka 1212), with our Saudi office upcoming in Riyadh. We are planning further growth across the Gulf and the wider region."
           },
           "q3": {
             "q": "How can my company partner with you?",
@@ -1221,7 +1228,7 @@
       "about": {
         "title": "About us",
         "body": [
-          "This website is operated by NEAMAT GLOBAL, headquartered in Riyadh, Kingdom of Saudi Arabia, on behalf of the group and its companies NeaPure, PropertyOS, BooleanForce and NEAMAT CARE."
+          "This website is operated by NEAMAT GLOBAL, headquartered at House 20, Road 13, Merul Badda, Dhaka 1212, Bangladesh, on behalf of the group and its companies NeaPure, PropertyOS, BooleanForce and NEAMAT CARE."
         ]
       },
       "use": {

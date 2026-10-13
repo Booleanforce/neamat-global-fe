@@ -14,20 +14,20 @@ export async function GlobalPresence({ showCta = true }: { showCta?: boolean } =
 
   const markets = [
     {
-      key: "saudi",
-      image: "/images/presence/saudi-arabia.webp",
-      name: t("markets.saudi.name"),
-      role: t("chips.hq"),
-      icon: Building,
-      imageAlt: t("markets.saudi.imageAlt"),
-    },
-    {
       key: "bangladesh",
       image: "/images/presence/bangladesh.webp",
       name: t("markets.bangladesh.name"),
-      role: t("chips.ops"),
-      icon: Factory,
+      role: t("chips.hq"),
+      icon: Building,
       imageAlt: t("markets.bangladesh.imageAlt"),
+    },
+    {
+      key: "saudi",
+      image: "/images/presence/saudi-arabia.webp",
+      name: t("markets.saudi.name"),
+      role: t("chips.upcoming"),
+      icon: Building,
+      imageAlt: t("markets.saudi.imageAlt"),
     },
   ];
 
@@ -75,17 +75,17 @@ export async function GlobalPresence({ showCta = true }: { showCta?: boolean } =
               title={t("mapAlt")}
               markers={[
                 {
+                  label: t("markets.bangladesh.name"),
+                  sublabel: t("markets.bangladesh.role"),
+                  x: 67.4,
+                  y: 40.6,
+                },
+                {
                   label: t("markets.saudi.name"),
                   sublabel: t("markets.saudi.role"),
                   x: 56.4,
                   y: 41.7,
                   labelSide: "left",
-                },
-                {
-                  label: t("markets.bangladesh.name"),
-                  sublabel: t("markets.bangladesh.role"),
-                  x: 67.4,
-                  y: 40.6,
                 },
               ]}
             />

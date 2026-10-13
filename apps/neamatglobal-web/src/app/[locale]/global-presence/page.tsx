@@ -50,7 +50,7 @@ export default async function GlobalPresencePage({ params }: PageProps) {
         locale={locale}
         stats={[
           { icon: Building, text: t("stats.hq.value"), label: t("stats.hq.label") },
-          { icon: Factory, text: t("stats.ops.value"), label: t("stats.ops.label") },
+          { icon: Building, text: t("stats.ops.value"), label: t("stats.ops.label") },
           { icon: LayoutGrid, value: 4, label: t("stats.units") },
           { icon: UsersRound, value: 1000, suffix: "+", label: t("stats.team") },
         ]}

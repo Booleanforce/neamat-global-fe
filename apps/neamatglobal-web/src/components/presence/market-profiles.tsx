@@ -7,21 +7,21 @@ import { SectionHeading } from "@/components/common/section-heading";
 import { businesses, type BusinessKey } from "@/content/businesses";
 
 const markets: {
-  key: "saudi" | "bangladesh";
+  key: "bangladesh" | "saudi";
   image: string;
   icon: typeof Building;
   units: BusinessKey[];
 }[] = [
   {
-    key: "saudi",
-    image: "/images/presence/saudi-arabia.webp",
+    key: "bangladesh",
+    image: "/images/presence/bangladesh.webp",
     icon: Building,
     units: ["neopure", "propertyos", "booleanforce", "neamatcare"],
   },
   {
-    key: "bangladesh",
-    image: "/images/presence/bangladesh.webp",
-    icon: Factory,
+    key: "saudi",
+    image: "/images/presence/saudi-arabia.webp",
+    icon: Building,
     units: ["neopure", "propertyos", "booleanforce", "neamatcare"],
   },
 ];
